@@ -1,0 +1,7 @@
+gcloud functions deploy transcoder-overlay-creation \
+  --gen2 \
+  --trigger-http \
+  --region=us-central1 \
+  --runtime=nodejs20 \
+  --source=. \
+  --entry-point=overlayCreationFunction 

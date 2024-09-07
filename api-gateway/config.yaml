@@ -1,0 +1,88 @@
+swagger: "2.0"
+info:
+  title: transcoder-api
+  description: API for managing transcoder cloud functions
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /generateThumbnails:
+    post:
+      summary: Generate thumbnails for provided input
+      consumes:
+        - application/json
+      operationId: generateThumbnails
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-generate-thumbnails
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string
+  /adBreakInsertion:
+    post:
+      summary: Generate ad breaks
+      consumes:
+        - application/json
+      operationId: adBreakInsertion
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-ad-break-insertion
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string
+  /captionsAndSubtitles:
+    post:
+      summary: Generate captions and subtitles
+      consumes:
+        - application/json
+      operationId: captionsAndSubtitles
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-captions-subtitles
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string
+  /cropVideo:
+    post:
+      summary: API for cropping input video
+      consumes:
+        - application/json
+      operationId: cropVideo
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-crop-video
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string
+  /overlayCreation:
+    post:
+      summary: API for creating an overlay
+      consumes:
+        - application/json
+      operationId: overlayCreation
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-overlay-creation
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string
+  /concatenateMultipleVideoInput:
+    post:
+      summary: API for concatenating multiple video inputs
+      consumes:
+        - application/json
+      operationId: concatenateMultipleVideoInput
+      x-google-backend:
+        address: https://us-central1-master-sector-430909-i0.cloudfunctions.net/transcoder-concatenate-multiple-video-input
+      responses:
+        "200":
+          description: Successful response
+          schema:
+            type: string

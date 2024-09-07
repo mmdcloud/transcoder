@@ -1,0 +1,7 @@
+gcloud functions deploy transcoder-concatenate-multiple-video-input \
+  --gen2 \
+  --trigger-http \
+  --region=us-central1 \
+  --runtime=nodejs20 \
+  --source=. \
+  --entry-point=concatenateMultipleInputsFunction 
