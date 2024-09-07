@@ -512,7 +512,7 @@ resource "google_api_gateway_api_config" "transcoder_api_config" {
   openapi_documents {
     document {
       path     = "config.yaml"
-      contents = filebase64("${path.module}/../../api-gateway/config.yaml")
+      contents = filebase64("${path.module}/../files/api-gateway-config.yaml")
     }
   }
   lifecycle {
