@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     background-image: url("../../public/assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */

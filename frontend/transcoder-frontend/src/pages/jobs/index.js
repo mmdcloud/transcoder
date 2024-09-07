@@ -2,8 +2,8 @@ import { useRouter } from "next/navigation"
 
 export default function Jobs() {
     const router = useRouter();
-    return <div class="relative overflow-x-auto mx-auto mt-4 w-11/12">
-        <table class="w-full text-sm text-left mt-8 rtl:text-right text-gray-500 dark:text-gray-400">
+    return <div class="relative overflow-x-auto mx-auto w-11/12">
+        <table class="w-full text-sm text-left mt-14 rtl:text-right text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
@@ -22,7 +22,7 @@ export default function Jobs() {
             </thead>
             <tbody>
                 <tr onClick={()=>{
-                    // router.push("/details");
+                    router.push("/details");
                 }} class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         Apple MacBook Pro 17"
@@ -51,77 +51,86 @@ export default function Jobs() {
                         $1999
                     </td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
+                        Microsoft Surface Pro
                     </th>
                     <td class="px-6 py-4">
-                        Black
+                        White
                     </td>
                     <td class="px-6 py-4">
-                        Accessories
+                        Laptop PC
                     </td>
                     <td class="px-6 py-4">
-                        $99
+                        $1999
                     </td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
+                        Microsoft Surface Pro
                     </th>
                     <td class="px-6 py-4">
-                        Black
+                        White
                     </td>
                     <td class="px-6 py-4">
-                        Accessories
+                        Laptop PC
                     </td>
                     <td class="px-6 py-4">
-                        $99
+                        $1999
                     </td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
+                        Microsoft Surface Pro
                     </th>
                     <td class="px-6 py-4">
-                        Black
+                        White
                     </td>
                     <td class="px-6 py-4">
-                        Accessories
+                        Laptop PC
                     </td>
                     <td class="px-6 py-4">
-                        $99
+                        $1999
                     </td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
+                        Microsoft Surface Pro
                     </th>
                     <td class="px-6 py-4">
-                        Black
+                        White
                     </td>
                     <td class="px-6 py-4">
-                        Accessories
+                        Laptop PC
                     </td>
                     <td class="px-6 py-4">
-                        $99
+                        $1999
                     </td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
+                        Microsoft Surface Pro
                     </th>
                     <td class="px-6 py-4">
-                        Black
+                        White
                     </td>
                     <td class="px-6 py-4">
-                        Accessories
+                        Laptop PC
                     </td>
                     <td class="px-6 py-4">
-                        $99
+                        $1999
                     </td>
                 </tr>
             </tbody>
         </table>
+        <div class="flex justify-center mt-8">
+            <a href="#" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Previous
+            </a>
+
+            <a href="#" class="flex items-center justify-center px-3 h-8 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Next
+            </a>
+        </div>
     </div>    
 }

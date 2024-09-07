@@ -9,7 +9,7 @@ export default function Dashboard() {
         <button type="button" onClick={()=>{
             router.push("/add-media");
         }} class="float-end text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add Media</button>
-        <table class="w-full text-sm text-left mt-12 rtl:text-right text-gray-500 dark:text-gray-400">
+        <table class="w-full text-sm text-left mt-14 rtl:text-right text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
@@ -129,5 +129,14 @@ export default function Dashboard() {
                 </tr>
             </tbody>
         </table>
+        <div class="flex justify-center mt-8">
+            <a href="#" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Previous
+            </a>
+
+            <a href="#" class="flex items-center justify-center px-3 h-8 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                Next
+            </a>
+        </div>
     </div>    
 }
